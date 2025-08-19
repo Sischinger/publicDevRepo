@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Heideck", "description": "Ein schöner Aussichtspunkt" },
+      "geometry": { "type": "Point", "coordinates": [8.1069081, 48.0469243] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Dreitälerblick", "description": "Blick auf drei Täler" },
+      "geometry": { "type": "Point", "coordinates": [8.1145343, 48.0462607] }
+    }
+  ]
+}
