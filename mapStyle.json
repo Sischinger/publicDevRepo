@@ -5,7 +5,6 @@
     "openmaptiles": {
       "type": "vector",
       "url": "http://192.168.178.46:8080/data/v3.json" 
-      // This should point to your vector tile source (usually hosted by OpenMapTiles)
     }
   },
   "sprite": "http://192.168.178.46:8080/sprites/klokantech-basic",
