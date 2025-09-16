@@ -3,18 +3,6 @@
   "id": "outdoor",
   "name": "Outdoor",
   "sources": {
-    "outdoor": {
-      "url": "https://api.maptiler.com/tiles/outdoor/tiles.json?key=rPBmIpNLxpGCDAOyZU7M",
-      "type": "vector"
-    },
-    "contours": {
-      "url": "https://api.maptiler.com/tiles/contours/tiles.json?key=rPBmIpNLxpGCDAOyZU7M",
-      "type": "vector"
-    },
-    "terrain-rgb": {
-      "url": "https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=rPBmIpNLxpGCDAOyZU7M",
-      "type": "raster-dem"
-    },
     "maptiler_planet": {
       "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=rPBmIpNLxpGCDAOyZU7M",
       "type": "vector"
