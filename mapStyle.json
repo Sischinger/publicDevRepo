@@ -6040,8 +6040,6 @@
   "metadata": {
     "maptiler:copyright": "This style was generated on MapTiler Cloud. Usage outside of MapTiler Cloud requires valid MapTiler Data Package: https://www.maptiler.com/data/package/ -- please contact us."
   },
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=rPBmIpNLxpGCDAOyZU7M",
-  "sprite": "https://api.maptiler.com/maps/outdoor/sprite",
   "bearing": 0,
   "pitch": 0,
   "center": [0, 0],
