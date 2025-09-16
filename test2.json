@@ -1,0 +1,112 @@
+{
+  "version": 8,
+  "name": "MapShot Albania Advanced",
+  "sources": {
+    "albania": {
+      "type": "vector",
+      "tiles": ["https://vectors.mapshot.io/tiles/{z}/{x}/{y}.pbf"],
+      "minzoom": 0,
+      "maxzoom": 14
+    }
+  },
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#e0e0e0"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "albania",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#a0c8f0"
+      }
+    },
+    {
+      "id": "parks",
+      "type": "fill",
+      "source": "albania",
+      "source-layer": "landuse",
+      "filter": ["==", "class", "park"],
+      "paint": {
+        "fill-color": "#c8e6c9"
+      }
+    },
+    {
+      "id": "highways",
+      "type": "line",
+      "source": "albania",
+      "source-layer": "roads",
+      "filter": ["==", "type", "highway"],
+      "paint": {
+        "line-color": "#f05a28",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1, 14, 6]
+      }
+    },
+    {
+      "id": "major-roads",
+      "type": "line",
+      "source": "albania",
+      "source-layer": "roads",
+      "filter": ["==", "type", "major_road"],
+      "paint": {
+        "line-color": "#f5a623",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.5, 14, 4]
+      }
+    },
+    {
+      "id": "minor-roads",
+      "type": "line",
+      "source": "albania",
+      "source-layer": "roads",
+      "filter": ["==", "type", "minor_road"],
+      "paint": {
+        "line-color": "#ffffff",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 12, 0.5, 16, 2]
+      }
+    },
+    {
+      "id": "buildings",
+      "type": "fill",
+      "source": "albania",
+      "source-layer": "buildings",
+      "paint": {
+        "fill-color": "#d6d6d6",
+        "fill-outline-color": "#a0a0a0"
+      }
+    },
+    {
+      "id": "place-labels",
+      "type": "symbol",
+      "source": "albania",
+      "source-layer": "places",
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 5, 10, 12, 16],
+        "text-anchor": "top"
+      },
+      "paint": {
+        "text-color": "#333333"
+      }
+    },
+    {
+      "id": "road-labels",
+      "type": "symbol",
+      "source": "albania",
+      "source-layer": "roads",
+      "layout": {
+        "text-field": ["get", "name"],
+        "symbol-placement": "line",
+        "text-size": ["interpolate", ["linear"], ["zoom"], 10, 10, 16, 14]
+      },
+      "paint": {
+        "text-color": "#666666"
+      }
+    }
+  ]
+}
+
