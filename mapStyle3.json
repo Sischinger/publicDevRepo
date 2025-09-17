@@ -4,7 +4,7 @@
   "name": "Outdoor",
   "sources": {
     "maptiler_planet": {
-      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=rPBmIpNLxpGCDAOyZU7M",
+      "url": "https://raw.githubusercontent.com/Sischinger/publicDevRepo/refs/heads/main/subStyle.json",
       "type": "vector"
     }
   },
