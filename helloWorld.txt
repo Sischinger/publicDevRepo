@@ -1,0 +1,18 @@
+Hello World - Places Data Example
+================================
+
+This is a simple "Hello World" example for the publicDevRepo repository.
+
+Repository Contents:
+- places.csv: Contains location data in CSV format
+- places.geojson: Contains the same location data in GeoJSON format
+
+Example Usage:
+1. Open places.csv to see location data with names, descriptions, and coordinates
+2. View places.geojson to see the same data in GeoJSON format suitable for mapping
+
+Sample Data:
+- Heideck: A beautiful viewpoint at coordinates (48.0469243, 8.1069081)
+- Dreitälerblick: View of three valleys at coordinates (48.0462607, 8.1145343)
+
+Hello World! Welcome to the places data repository.
